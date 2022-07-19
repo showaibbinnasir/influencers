@@ -1,0 +1,214 @@
+/* --------------google font importer 
+----------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+    
+}
+.container{
+    margin: 87px 120px;
+}
+
+.logo h2{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #3A3A3A;
+}
+
+.nav-menu ul{
+    display: flex;
+}
+.nav-menu ul li{
+    list-style: none;
+    font-size: 16px;
+    padding: 0px 34px;
+}
+.icons{
+    font-size: 30px;
+    
+}
+
+.button{
+    font-size: 16px;
+    background-color: #E02C6D;
+    border: none;
+    color: white;
+    padding: 10px 24px;
+    border-radius: 41px;
+}
+
+.header-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+.journey-starts{
+    padding-right: 120px;
+}
+.header-image{
+    position: relative;
+    top: 0;
+    left: 0;
+    
+}
+.imageOne{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    
+}
+
+
+.imageTwo{
+    position: relative;
+    left: 0;
+    top: 0;; 
+}
+
+.brands{
+    
+    display: flex;
+    justify-content:center;
+    margin: 2%;
+    
+}
+
+.company {
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-column-gap: 10px;
+    align-items: center;
+    
+    
+}
+
+.popular{
+    margin-top: 100px;
+}
+
+.section-title{
+    text-align: center;
+}
+
+.content{
+    box-shadow:  0px 0px 40px rgba(0, 0, 0, 0.15);
+    padding: 14px;
+    border-radius: 5px;
+    width: 330px;
+}
+.image-content{
+    transform: translate(15px);
+}
+.content p, h5, h3{
+    margin: 5px;
+}
+.rating{
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+    color: #FB8200;
+}
+.rating p{
+    margin-left: 10px;
+    color: gray;
+}
+
+.details{
+    color: #787885;
+}
+
+.popular-contents{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 30px;
+    justify-items: center;
+
+}
+
+.button-see-more{
+    margin-top: 50px;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 100px;
+    
+}
+.button-see-more button{
+    background-color: white;
+    border: none;
+    color: rgba(224, 44, 109, 0.87);
+    font-weight: 700;
+}
+
+footer{
+    margin-top: 100px;
+    height: 20vh;
+    background-color: black;
+    margin: 0px;
+}
+
+
+
+
+/* media query starts from here */
+
+@media only screen and (max-width:668px){
+    .header-content{
+        flex-direction: column-reverse;
+    }
+    .nav-bar{
+        display: none;
+    }
+    .journey-starts{
+        padding-right: 0px;
+        
+    }
+    .journey-starts p{
+        text-align: justify;
+    }
+    .journey-starts{
+        text-align: center;
+    }
+    hr{
+        display: none;
+    }
+
+    .company{
+        
+        justify-items: center;
+    }
+    .company img{
+        width: 40px;
+    }
+    .popular-contents{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .container{
+        margin: 10px;
+        
+    }
+    .imageOne, .imageTwo{
+        width: 100%;
+    }
+    .imageOne{
+        
+        top: 15px;
+        left: 15px;
+        
+    }
+    .content{
+        padding: 10px;
+    }
+
+        
+}
